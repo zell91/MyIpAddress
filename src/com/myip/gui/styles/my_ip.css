@@ -1,0 +1,65 @@
+#root{
+	-fx-padding:8 20 5;
+}
+
+#titleLbl{
+	-fx-font-size:20;
+}
+
+#ipText{
+	-fx-font-size:70;
+	-fx-alignment:CENTER;
+	-fx-background-color:transparent;
+	-fx-background-insets:0;
+	-fx-padding:0;
+	-fx-prompt-text:rgba(0,0,0);
+	-fx-prompt-text-opacity:1;
+	-fx-min-width:505;	
+	
+}
+
+
+#ipText .context-menu{
+	-fx-font-size:12;
+}
+
+#copyBtn{
+	-fx-background-image:url("../../../../../images/copy.png");
+	-fx-background-position:CENTER CENTER;
+	-fx-background-size:50 50;
+	-fx-background-color:transparent;
+	-fx-background-repeat:no-repeat;
+	-fx-pref-width:50;
+	-fx-min-height:50;
+	-fx-cursor:HAND;
+	-fx-opacity:.8;
+}
+
+#actionBtn{
+	-fx-background-image:url("../../../../../images/search.png");
+	-fx-background-position:CENTER CENTER;
+	-fx-background-size:50 50;
+	-fx-background-color:transparent;
+	-fx-background-repeat:no-repeat;
+	-fx-pref-width:50;
+	-fx-min-height:50;
+	-fx-cursor:HAND;
+	-fx-opacity:.8;
+}
+
+#copyBtn:hover, #actionBtn:hover{
+	-fx-opacity:1;
+}
+
+#copyBtn:pressed, #actionBtn:pressed{
+	-fx-opacity:.6;
+}
+
+#copyBtn:disabled, #actionBtn:disabled{
+	-fx-opacity:.3;
+}
+
+
+#stateLbl{
+	-fx-padding:0 0 0 -10;
+}

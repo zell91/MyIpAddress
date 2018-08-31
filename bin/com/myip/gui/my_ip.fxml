@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="root" prefWidth="550" minHeight="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myip.controller.MyIPController" stylesheets="@styles/my_ip.css">
+	<top></top>
+	<center>
+		<VBox fx:id="centerSection" spacing="0">
+			<children>
+				<HBox fx:id="buttonBar" alignment="CENTER">
+					<children>
+						<Button fx:id="actionBtn" onAction="#getMyIP" minWidth="-Infinity"/>
+						<TextField fx:id="ipText" HBox.hgrow="ALWAYS" editable="FALSE" disable="TRUE" />
+						<Button fx:id="copyBtn" onAction="#copy" disable="TRUE" minWidth="-Infinity" />
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</center>
+	<bottom>
+		<Label fx:id="stateLbl" />
+	</bottom>
+</BorderPane>
